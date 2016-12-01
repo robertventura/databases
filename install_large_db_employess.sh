@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # VARIABLES NECESSÀRIES
-export DB_USER=usuari
-export DB_PWD=password
+export DB_USER=$1
+export DB_PWD=$2
 
 yum install -y wget bzip2
 
