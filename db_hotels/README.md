@@ -2,10 +2,10 @@
 
 Aquest document descriu la base de dades Hotels
 
-hotels és una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de cicles formatius de grau superior d'informàtica per la Generalitat de Catalunya.
-Aquesta base de dades va ser creada per a usos didàctics en assignatures com gestió de base de dades, administració de base de dades.
+hotels Ã©s una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de cicles formatius de grau superior d'informÃ tica per la Generalitat de Catalunya.
+Aquesta base de dades va ser creada per a usos didÃ ctics en assignatures com gestiÃ³ de base de dades, administraciÃ³ de base de dades.
 
-Aquesta base de dades vol simular una BD de reserves d'hotels de 4/5 estrelles situats a Catalunya. Les seves taules principals són:
+Aquesta base de dades vol simular una BD de reserves d'hotels de 4/5 estrelles situats a Catalunya. Les seves taules principals sÃ³n:
 
 * Paisos (~19 registres)
 * Poblacions (~100 registres)
@@ -14,41 +14,41 @@ Aquesta base de dades vol simular una BD de reserves d'hotels de 4/5 estrelles s
 * Clients (~17.900 registres)
 * Reserves (~182.000 registres)
 
-> Aquesta base de dades no conté cap índex que no sigui procedent d'una clau primària o forana.
-> Tampoc conté cap control d'entrada de dades excepte les contraints d'integritat referencial proporcionades per les claus foranes i les contraints d'unicitats proporcionades per les claus primàries de cada taula.
+> Aquesta base de dades no contÃ© cap Ã­ndex que no sigui procedent d'una clau primÃ ria o forana.
+> Tampoc contÃ© cap control d'entrada de dades excepte les contraints d'integritat referencial proporcionades per les claus foranes i les contraints d'unicitats proporcionades per les claus primÃ ries de cada taula.
 
 ## Taules
 
 ### Paisos
 
-La taula de paisos conté el codi i el nom de paisos. Aquesta taula s'utilitza per emmagatzemar el nom dels diferents paisos dels clients.
+La taula de paisos contÃ© el codi i el nom de paisos. Aquesta taula s'utilitza per emmagatzemar el nom dels diferents paisos dels clients.
 
 ### Poblacions
 
-La taula de poblacions conté les poblacions d'on estan situtats els hotels. Tal i com hem dit anteriorment són poblacions dins de Catalunya.
+La taula de poblacions contÃ© les poblacions d'on estan situtats els hotels. Tal i com hem dit anteriorment sÃ³n poblacions dins de Catalunya.
 
 ### Hotels
 
-La taula hotels conté un subconjut de tots els hotels de 4 i 5 estrelles de Catalunya extrets d'un llistat a l'any 2017. Cosa que aquests poden estar desactualitzats a data d'avui.
+La taula hotels contÃ© un subconjut de tots els hotels de 4 i 5 estrelles de Catalunya extrets d'un llistat a l'any 2017. Cosa que aquests poden estar desactualitzats a data d'avui.
 
 ### Habitacions
 
-La taula d'habitacions conté la informació de cadascuna de les habitacions dels diferents hotels
+La taula d'habitacions contÃ© la informaciÃ³ de cadascuna de les habitacions dels diferents hotels
 
 ### Clients
 
-La taula clients conté la informació de cadascun dels clients que realitza reserves en els hotels.
-Degut a que les dades s'han generat de forma aleatòria pot ser que un mateix client tingui dues reserves en habitacions diferents dins del mateix període.
+La taula clients contÃ© la informaciÃ³ de cadascun dels clients que realitza reserves en els hotels.
+Degut a que les dades s'han generat de forma aleatÃ²ria pot ser que un mateix client tingui dues reserves en habitacions diferents dins del mateix perÃ­ode.
 
 ### Reserves
 
-La taula de reserves conté reserves dels anys compresos entre 2014 i 2016 
+La taula de reserves contÃ© reserves dels anys compresos entre 2014 i 2016 
 
-Si es vol controlar l'entrada de reserves per tal de que aquestes siguin consistents es pot fer ús del següent disparador/trigger a la taula reserves
+Si es vol controlar l'entrada de reserves per tal de que aquestes siguin consistents es pot fer Ãºs del segÃ¼ent disparador/trigger a la taula reserves
 ```sql
 -- -----------------------------------
 -- Trigger que controla el solapament 
--- de les reserves en la mateixa habitació 
+-- de les reserves en la mateixa habitaciÃ³ 
 -- alhora de fer l'INSERT
 -- -----------------------------------
 CREATE TRIGGER trg_ReservesInsert BEFORE INSERT ON reserves
@@ -58,7 +58,7 @@ BEGIN
    SELECT COUNT(*) INTO @vCount
       FROM reserves r
    WHERE r.hab_id = NEW.hab_id 
-    AND NEW.data_inici <= r.data_fi AND NEW.data_fi >= r.data_inici;
+    AND NEW.data_inici < r.data_fi AND NEW.data_fi > r.data_inici;
     
    IF @vCount > 0 THEN
       SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "Error: Hi ha reserves solapades";
