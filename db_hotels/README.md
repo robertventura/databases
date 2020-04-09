@@ -2,8 +2,8 @@
 
 Aquest document descriu la base de dades Hotels
 
-hotels és una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de cicles formatius de grau superior d'informàtica per la Generalitat de Catalunya.
-Aquesta base de dades va ser creada per a usos didàctics en assignatures com gestió de base de dades, administració de base de dades.
+hotels és una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de Cicles Formatius d'Informàtica per la Generalitat de Catalunya.
+Aquesta base de dades va ser creada amb dades aleatòries i destinada a usos didàctics en assignatures com gestió de base de dades i administració de base de dades.
 
 Aquesta base de dades vol simular una BD de reserves d'hotels de 4/5 estrelles situats a Catalunya. Les seves taules principals són:
 
@@ -15,6 +15,7 @@ Aquesta base de dades vol simular una BD de reserves d'hotels de 4/5 estrelles s
 * Reserves (~182.000 registres)
 
 > Aquesta base de dades no conté cap índex que no sigui procedent d'una clau primària o forana.
+> 
 > Tampoc conté cap control d'entrada de dades excepte les contraints d'integritat referencial proporcionades per les claus foranes i les contraints d'unicitats proporcionades per les claus primàries de cada taula.
 
 ## Taules
@@ -65,8 +66,6 @@ BEGIN
    END IF;
 
 END
-
-
-
+```
 
 
