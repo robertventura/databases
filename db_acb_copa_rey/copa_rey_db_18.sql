@@ -28,9 +28,9 @@
 -- Current Database: `copa_rey_db`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `copa_rey_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `copa_rey_18_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `copa_rey_db`;
+USE `copa_rey_18_db`;
 
 --
 -- Table structure for table `clubs`
