@@ -1,0 +1,2 @@
+MongoDB en els seus trainnings proporciona diferents BD. Algunes d'elles són:
+![Image of Examples MongoDB datasets schemas](https://github.com/robertventura/databases/mongodb/img/mongodb_databases.jpg)
