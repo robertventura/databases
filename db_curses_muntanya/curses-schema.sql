@@ -5,7 +5,7 @@
 -- Descripció: Script per la creació de l'esquelet de la BD
 -- --------------------------------------------------------------
 
-DROP DATABASE curses_muntanya;
+DROP DATABASE IF EXISTS curses_muntanya;
 
 CREATE DATABASE IF NOT EXISTS curses_muntanya;
 
