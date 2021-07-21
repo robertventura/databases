@@ -18,12 +18,12 @@ Les seves taules principals són:
 * **Municipis (~766 registres)**
 * **Tipus de Casos (5 registres):** Conté els tipus de casos que s'han classificat amb les diferents maneres/proves fetes per detectar positius (Positiu per Test Ràpid, Epidemiològic, Positiu per ELISA, Positiu per ELISA, Positiu per PCR, Positiu per TAR).
 * **Casos (~155.500 registres):** En aquesta taula conté el número de casos que hi ha hagut en una municipi per sexe i tipus de cas (Positiu per PCR, Test Ràpid,...)
-* **Centres Educatius Casos (~ registres)**
+* **Centres Educatius Casos (~ 1.000.000 registres)**
 
 data_generació: Data de la descàrrega de les dades del TRAÇACOVID
 data_creació: Data en que s'ha introduït la dada en el sistema
 
-* **Centres Educatius (~ registres)**
+* **Centres Educatius (~ 3.800 registres)**
 
 > Aquesta base de dades no conté cap índex que no sigui una clau primària, foranao algun índex de tipus únic.
 > 
