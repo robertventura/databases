@@ -10,7 +10,7 @@ Aquesta base de dades va destinada a usos didàctics en assignatures com base de
 
 * Model Worbench de la base de dades(./model-covid_db.mwb)
 * El fitxer [covid_db-schema.sql](./covid_db-schema.sql) conté les sentències DDL per la generació de l'esquema/estructura de la base de dades.
-* El fitxer [covid_db-data.sql](covid_db-data.sql) conté les sentències DML per poder afegir les dades a la base de dades.
+* El fitxer [covid_db-data.zip](covid_db-data.zip) conté les sentències DML per poder afegir les dades per cada taula de la la base de dades.
 
 Les seves taules principals són:
 
@@ -18,7 +18,7 @@ Les seves taules principals són:
 * **Municipis (~766 registres)**
 * **Tipus de Casos (5 registres):** Conté els tipus de casos que s'han classificat amb les diferents maneres/proves fetes per detectar positius (Positiu per Test Ràpid, Epidemiològic, Positiu per ELISA, Positiu per ELISA, Positiu per PCR, Positiu per TAR).
 * **Casos (~155.500 registres):** En aquesta taula conté el número de casos que hi ha hagut en una municipi per sexe i tipus de cas (Positiu per PCR, Test Ràpid,...)
-* **Centres Educatius Casos (~ 1.000.000 registres)**
+* **Centres Educatius Casos (~ 450.000 registres)**
 
 data_generació: Data de la descàrrega de les dades del TRAÇACOVID
 data_creació: Data en que s'ha introduït la dada en el sistema
