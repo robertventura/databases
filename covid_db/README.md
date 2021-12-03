@@ -14,6 +14,7 @@ Aquesta base de dades va destinada a usos didàctics en assignatures com base de
 
 Les seves taules principals són:
 
+* **Provincies (4 registres)**
 * **Comarques (~42 registres)**
 * **Municipis (~766 registres)**
 * **Tipus de Casos (5 registres):** Conté els tipus de casos que s'han classificat amb les diferents maneres/proves fetes per detectar positius (Positiu per Test Ràpid, Epidemiològic, Positiu per ELISA, Positiu per ELISA, Positiu per PCR, Positiu per TAR).
