@@ -8,7 +8,7 @@ Les dades s'han extret del [Portal de dades obertes de la Generalitat de Catalun
 
 Aquesta base de dades va destinada a usos didàctics en assignatures com base de dades, gestió i administració de base de dades.
 
-* Model Worbench de la base de dades(./model-covid_db.mwb)
+* Model de la base de dades en format Workbench  [model-covid_db.mwb](./model-covid_db.mwb)
 * El fitxer [covid_db-schema.sql](./covid_db-schema.sql) conté les sentències DDL per la generació de l'esquema/estructura de la base de dades.
 * El fitxer [covid_db-data.zip](covid_db-data.zip) conté les sentències DML per poder afegir les dades per cada taula de la la base de dades.
 
