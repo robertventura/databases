@@ -62,7 +62,7 @@ INSERT INTO curses VALUES(1,'Open Girona BTT',1,'Girona','2014-08-11',9,20,10);
 INSERT INTO curses VALUES(2,'Open Bike BMW',1,'Campllong','2013-12-17',3,15,7.5);
 INSERT INTO curses VALUES(3,'Marxa BMW',1,'Tordera','2013-12-15',5,15,7.5);
 INSERT INTO curses VALUES(4,'Open Mitja',1,'Banyoles','2013-10-05',12,30,15);
-INSERT INTO curses VALUES(5,'Rocacobrba',1,'Argeleguer','2013-12-10',2,30,15);
+INSERT INTO curses VALUES(5,'Rocacorba',1,'Argeleguer','2013-12-10',2,30,15);
 INSERT INTO curses VALUES(6,'Copa Vivers Forver',1,'Agramunt','2013-09-01',4,20,10);
 INSERT INTO curses VALUES(7,'BTT Sant Jordi Desvalls',1,'Sant Jordi Desvalls','2013-11-20',10,35,17.5);
 INSERT INTO curses VALUES(8,'Extrema Gavarres',1,'La Biscal d\'Empordà','2013-11-01',11,35,17.5);
