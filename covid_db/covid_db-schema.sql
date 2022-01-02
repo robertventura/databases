@@ -25,7 +25,7 @@ CREATE TABLE `casos` (
   `cas_id` int(4) unsigned NOT NULL AUTO_INCREMENT,
   `municipi_id` smallint(5) unsigned NOT NULL,
   `tipus_cas_id` tinyint(3) unsigned NOT NULL,
-  `sexe` enum('D','H') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'Sexe ''D'' Dona, ''H'' Home',
+  `sexe` enum('D','H') CHARACTER SET utf8mb4 NOT NULL COMMENT 'Sexe ''D'' Dona, ''H'' Home',
   `data` date NOT NULL,
   `quantitat` smallint(5) unsigned NOT NULL COMMENT 'Quantitat de casos segons el ',
   PRIMARY KEY (`cas_id`),
@@ -36,7 +36,7 @@ CREATE TABLE `casos` (
   KEY `sexe_idx` (`sexe`),
   CONSTRAINT `fk_casos_municipis1` FOREIGN KEY (`municipi_id`) REFERENCES `municipis` (`municipi_id`),
   CONSTRAINT `fk_casos_tipus_casos` FOREIGN KEY (`tipus_cas_id`) REFERENCES `tipus_casos` (`tipus_cas_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=223141 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=223141 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +61,7 @@ CREATE TABLE `centres_educatius` (
   UNIQUE KEY `codi_UNIQUE` (`codi`),
   KEY `fk_centres_educatius_municipis1_idx` (`municipi_id`),
   CONSTRAINT `fk_centres_educatius_municipis1` FOREIGN KEY (`municipi_id`) REFERENCES `municipis` (`municipi_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3817 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3817 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,17 +76,17 @@ CREATE TABLE `centres_educatius_casos` (
   `centre_educatiu_id` smallint(5) unsigned NOT NULL,
   `data_generacio` date NOT NULL,
   `data_creacio` date NOT NULL,
-  `grups_confinats` tinyint(3) unsigned zerofill NOT NULL,
-  `alumnes_confinats` tinyint(3) unsigned zerofill NOT NULL,
-  `docents_confinats` tinyint(3) unsigned zerofill NOT NULL,
-  `alumnes_positius_acum` smallint(5) unsigned zerofill NOT NULL,
-  `docents_positius_acum` smallint(5) unsigned zerofill NOT NULL,
-  `alumnes_positius_vig11` smallint(5) unsigned zerofill NOT NULL,
-  `docents_positius_vig11` smallint(5) unsigned zerofill NOT NULL,
+  `grups_confinats` tinyint(3) unsigned  NOT NULL,
+  `alumnes_confinats` tinyint(3) unsigned  NOT NULL,
+  `docents_confinats` tinyint(3) unsigned  NOT NULL,
+  `alumnes_positius_acum` smallint(5) unsigned  NOT NULL,
+  `docents_positius_acum` smallint(5) unsigned  NOT NULL,
+  `alumnes_positius_vig11` smallint(5) unsigned  NOT NULL,
+  `docents_positius_vig11` smallint(5) unsigned  NOT NULL,
   PRIMARY KEY (`centre_educatiu_cas_id`),
   KEY `fk_centres_educatius_casos_centres_educatius1_idx` (`centre_educatiu_id`),
   CONSTRAINT `fk_centres_educatius_casos_centres_educatius1` FOREIGN KEY (`centre_educatiu_id`) REFERENCES `centres_educatius` (`centre_educatiu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=458863 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=458863 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `comarques` (
   UNIQUE KEY `comarca_codi_UNIQUE` (`codi`),
   KEY `fk_comarques_provincies` (`provincia_id`),
   CONSTRAINT `fk_comarques_provincies` FOREIGN KEY (`provincia_id`) REFERENCES `provincies` (`provincia_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `municipis` (
   UNIQUE KEY `comarca_codi_UNIQUE` (`codi`),
   KEY `fk_municipis_comarques1_idx` (`comarca_id`),
   CONSTRAINT `fk_municipis_comarques1` FOREIGN KEY (`comarca_id`) REFERENCES `comarques` (`comarca_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=767 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=767 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -140,7 +140,7 @@ CREATE TABLE `provincies` (
   `codi` char(2) DEFAULT NULL,
   `nom` char(10) DEFAULT NULL,
   PRIMARY KEY (`provincia_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +155,7 @@ CREATE TABLE `tipus_casos` (
   `codi` char(5) NOT NULL COMMENT 'Els tipus de casos disponibles són:l\nTR: Positiu per Test Ràpid\nEPID: Epidemiològic\nELISA: Positiu per ELISA\nPCR: Positiu PCR\nTAR: Positiu TAR',
   `nom` varchar(25) NOT NULL COMMENT 'Els tipus de casos disponibles són:l\nTR: Positiu per Test Ràpid\nEPID: Epidemiològic\nELISA: Positiu per ELISA\nPCR: Positiu PCR\nTAR: Positiu TAR',
   PRIMARY KEY (`tipus_cas_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
