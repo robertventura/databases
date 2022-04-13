@@ -2,9 +2,9 @@
 
 Aquesta BD està extreta d'un seminari web de MongoDB
 
-Per importar la BD només cal
+Per importar la BD només cal descomprimir el fitxer .zip i llavors utilitzar ```mongorestore```
 
 ```bash
-$montorestore ./dump
+$ mongorestore ./dump
 ```
 
