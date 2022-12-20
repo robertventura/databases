@@ -1,4 +1,7 @@
 # Exercicis DML BD Curses de Muntanya
+
+Tags:#FpInfor #ICA0 #ICB0 #ICC0 #Administració de Sistemes Informàtics i Xarxes #Desenvolupament d'Aplicacions Multiplataforma #Desenvolupament d'Aplicacions Web #ICA0MP02 #ICB0MP02 #ICC0MP02
+
 -----
 
 ## APARTAT A (INSERT, UPDATE, DELETE)
