@@ -5,6 +5,7 @@ Aquesta base de dades s'ha extret de la web Ergast (https://ergast.com/mrd/) a o
 # Esquema de la base de dades
 
 L'esquema de la base de dades es mostra en el document [f1db_user_guide.txt](f1db_user_guide.txt).
+o també trobareu un diagrama en el fitxer [db_diagram.png](db_diagram.png).
 
 A continuació de detallen alguns aspectes a considerar a nivell d'interpretació de certes taules/camps.
 
