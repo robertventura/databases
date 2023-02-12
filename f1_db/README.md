@@ -9,7 +9,7 @@ o també trobareu un diagrama en el fitxer [db_diagram.png](db_diagram.png).
 
 A continuació de detallen alguns aspectes a considerar a nivell d'interpretació de certes taules/camps.
 
-## Taula **sprintResults** i **results**
+## Taula ***sprintResults*** i ***results***
 
 * **D: Disqualified** -> Desqualificat: Alguna raó sancionadora per part de comissaris, com per exemple, no respectar un semàfor vermell.
 * **E: Excluded** -> Exclòs: Desqualificat a posteriori per algun tema il·legal (les verificacions de pes, de flexibilitat dels alerons, mostra de combustible,... no s'han superat) 
@@ -18,7 +18,7 @@ A continuació de detallen alguns aspectes a considerar a nivell d'interpretaci�
 * **R: Retired** -> Retirat: el pilot ha abandonat per algun motiu durant la cursa. 
 * **W: Withdrew** -> No participa: és quan s'ha classificat a la qualificació però per algun motiu no participa a la cursa (per exemple, li ha fallat el cotxe a la volta d'escalfament) 
 
-## Taula **status**
+## Taula ***status***
 
 Aquesta taula està relacionada amb **results** i **sprintResults**
 
@@ -39,6 +39,11 @@ Aquesta taula està relacionada amb **results** i **sprintResults**
 * **Brakes:** Frens
 * **Differential:** Diferencial
 * **Overheating:** Sobreescalfament
+
+## Taula ***constructorStandings***
+
+Aquesta taula contempla la classificació de les escuderies en les diferents curses. 
+El camp `wins` és un acumulat de les victòries de l'escuderia dins de la temporada.
 
 ## Notes i altres consideracions
 
