@@ -43,6 +43,8 @@ Aquesta taula està relacionada amb **results** i **sprintResults**
 ## Taula ***constructorStandings***
 
 Aquesta taula contempla la classificació de les escuderies en les diferents curses. 
+El camp `points` és un acumulat dels punts que porta l'escuderia dins de la temporada.
+Els camp  `position` i `positionText` són les classficiacions de l'escuderia dins de la temporada
 El camp `wins` és un acumulat de les victòries de l'escuderia dins de la temporada.
 
 ## Notes i altres consideracions
