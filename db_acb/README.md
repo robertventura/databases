@@ -13,6 +13,9 @@ Base de dades de MongoDB amb dues col·leccions:
 * **partits**: 7.103 documents
 * **jugadors**: 2.246 documents
 
+Per la quantiat de docuemnts de la col·lecció de partits s'ha dividit la col·lecció en fitxers de 1.000 documents cadascú.
+
+
 ## Format **Jugadors**
 
 ```json
