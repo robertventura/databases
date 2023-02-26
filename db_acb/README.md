@@ -142,6 +142,12 @@ La base de dades s'ha exportat d'un SGBD MongoDB mitjançant l'eina [**mongoexpo
 mongoexport --uri mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net/<db-name> --collection <collection-name> --out <path-to-export>
 ```
 
+```cmd
+mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="0" --out="partits_0.json"
+mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.nett" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="1000" --out="partits_1000.json"
+mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="2000" --out="partits_2000.json"
+...
+```
 
 
 
