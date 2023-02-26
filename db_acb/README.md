@@ -147,6 +147,7 @@ mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mon
 mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.nett" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="1000" --out="partits_1000.json"
 mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="2000" --out="partits_2000.json"
 ...
+mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="7000" --out="partits_7000.json"
 ```
 
 
