@@ -2,13 +2,19 @@
 
 Aquest document descriu la base de dades Copa del Rey ACB
 
-copa_rey_db és una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de cicles formatius de grau superior d'informàtica per la Generalitat de Catalunya.
-Aquesta base de dades va ser creada per a usos didàctics en assignatures com gestió de base de dades, administració de base de dades.
+copa_rey_db Ã©s una base de dades creada per [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de cicles formatius de grau superior d'informÃ tica per la Generalitat de Catalunya.
+Aquesta base de dades va ser creada per a usos didÃ ctics en assignatures com gestiÃ³ de base de dades, administraciÃ³ de base de dades.
 
-Aquesta base de dades s'ha creat a partir de les dades obertes que ofereix el web de l'ACB per la competició Copa del Rey (http://www.acb.com) a partir de l'edició 2016.
+Aquesta base de dades s'ha creat a partir de les dades obertes que ofereix el web de l'ACB per la competiciÃ³ Copa del Rey (http://www.acb.com) a partir de l'ediciÃ³ 2016.
 
-Els fitxers que hi ha són:
+Els fitxers que hi ha sÃ³n:
 
-* copa_rey_db.sql (actualitzada 2018): fitxer SQL que conté la creació de la BD ( schema + data )
-* model.mwb: EER diagram. Model de la BD mitjançant l'eina Workbench
+* copa_rey_db.sql (actualitzada 2018): fitxer SQL que contÃ© la creaciÃ³ de la BD ( schema + data )
+* model.mwb: EER diagram. Model de la BD mitjanÃ§ant l'eina Workbench
+
+## Model de la base de dades
+
+![Model de la base de dades](model_db_acb_copa_rey.png)
+
+
 
