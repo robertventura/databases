@@ -150,6 +150,12 @@ mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mon
 mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --limit="1000" --skip="7000" --out="partits_7000.json"
 ```
 
+En aquest cas he exportat la col·lecció partits per temporada i competició.
+Exemple. Si volem exportar tots els partits de la Lliga Regular de la temporada 2023-2024 farem:
+```cmd
+mongoexport.exe --uri="mongodb+srv://<username>:<password>@atlas-cluster-url.mongodb.net" -d="acb_db" -c="partits" --sort="{_id: 1}" --query="{\"temporada\": \"2023-2024\",  \"competicio\": { \"$regex\": \"Lliga Regular\", \"$options\": \"i\" }}"
+```
+
 
 
 
