@@ -10,11 +10,10 @@ S'ha importat les dades tant de les competicions de la lliga regular i de la cop
 ## Descripció de la base de dades
 
 Base de dades de MongoDB amb dues col·leccions:
-* **partits**: ~7.480 documents
-* **jugadors**: ~2.359 documents
+* **partits**: ~7.500 documents
+* **jugadors**: ~2.400 documents
 
-Per la quantiat de documents de la col·lecció de partits s'ha dividit la col·lecció en fitxers de 2.000 documents cada un.
-
+*Data última actualització: 26/05/2024*
 
 ## Format **Jugadors**
 
