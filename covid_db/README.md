@@ -30,5 +30,8 @@ data_creació: Data en que s'ha introduït la dada en el sistema
 > 
 > Tampoc conté cap control d'entrada de dades excepte les restriccions d'integritat referencial proporcionades per les claus foranes i les restriccions d'unicitat de les claus primàries o els índexs de tipus únic.
 
+![image](diagrama_covid_db.png)
+
+
 
 Autor: [Robert Ventura Vall-llovera](https://www.linkedin.com/in/robertvallllovera/ "Perfil LinkedIn Robert Ventura Vall-llovera"), professor de Cicles Formatius d'Informàtica per la Generalitat de Catalunya .
